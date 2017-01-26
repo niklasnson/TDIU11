@@ -33,11 +33,29 @@ processen. Varje funktion baseras på en eller flera uppgifter.  En del av dessa
 svar från andra delar av systemet, resten baseras på information eller som svar på data som andra funktioner eller 
 uppgifter lämnar. Ingen av dessa uppgifter kan utföras innan en funktion kräver detta. Dessa uppgofter måste ske inom 
 en viss tidsram - en del är strikt beronde av att de uförs inom en exakt tidsrymd (dessa kategoriserar vi som 
-"hard-real-time", dess motsatt "soft-real-time"). En bra 
+"hard-real-time", dess motsatt "soft-real-time"). En bra metafor skulle kunna vara en hjärtsimulator, där det är viktigt 
+att varje slag slår på exakt utsatt tid - det hjälper inte att det i snitt sker på rätt tid. En pacemaker skulle alltså 
+här visas arbeta i "hard-real-time". 
 
 
 ### Metod 
 
+* (A1) 
+    Alla förfrågningar för uppgifter som har hårda deadlines är periodiska, med en konstant intervall mellan förfrågningar.
+
+* (A2) 
+    Varje uppgift måste slutföras innan nästa förfrågan kan hanteras.  
+
+* (A3)
+    Uppgiften är oberoende av start eller slutförande av förfrågningar av andra uppgifter. 
+
+* (A4) 
+    Exekveringstid för varje uppgift är konstant för den uppgiften och kommer inte variera mellan olika körningar. 
+
+* (A5)
+    Icke-periodiska uppgifter är speciella dessa hanterar initiering eller felhantering. De flyttar periodiska uppgifter 
+    när de körs och har inte hårda deadlines.  
+    
 
 ### Resultat
 
