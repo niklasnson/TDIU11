@@ -24,9 +24,16 @@ aktiviteterna för att systemet skall kunna arbeta effektivt och säkert. Den se
 för att lägga fram den kombinerade metoden. 
 
 Två algoritmer för schemaläggning för denna typ av processer studeras i artikeln. Båda dessa algoritmer bygger på 
-prioritet och baseras på **preemtion** (det aktuella arbetet kan avbrytas för att köra ett annat högre prioriterat 
+prioritet och baseras på "preemtion" (det aktuella arbetet kan avbrytas för att köra ett annat högre prioriterat 
 arbete). Den första metoden använder sig av fixerad tilldelning av prioritet, den andra använder sig av en flexibel 
 tilldelning av prioritet. Genom att kombinera de båda algoritmerna så kan man {} vilket även kommer att diskuteras. 
+
+Ett dator system för att hantera ett processflöde utför en eller flera funktioner för att kontrollera och övervaka
+processen. Varje funktion baseras på en eller flera uppgifter.  En del av dessa uppgifter är baserade på avbrott eller 
+svar från andra delar av systemet, resten baseras på information eller som svar på data som andra funktioner eller 
+uppgifter lämnar. Ingen av dessa uppgifter kan utföras innan en funktion kräver detta. Dessa uppgofter måste ske inom 
+en viss tidsram - en del är strikt beronde av att de uförs inom en exakt tidsrymd (dessa kategoriserar vi som 
+"hard-real-time", dess motsatt "soft-real-time"). En bra 
 
 
 ### Metod 
