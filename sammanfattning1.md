@@ -28,13 +28,13 @@ prioritet och baseras på "preemtion" (det aktuella arbetet kan avbrytas för at
 arbete). Den första metoden använder sig av fixerad tilldelning av prioritet, den andra använder sig av en flexibel 
 tilldelning av prioritet. Genom att kombinera de båda algoritmerna så kan man {} vilket även kommer att diskuteras. 
 
-Ett dator system för att hantera ett processflöde utför en eller flera funktioner för att kontrollera och övervaka
+Ett datorsystem för att hantera ett processflöde utför en eller flera funktioner för att kontrollera och övervaka
 processen. Varje funktion baseras på en eller flera uppgifter.  En del av dessa uppgifter är baserade på avbrott eller 
 svar från andra delar av systemet, resten baseras på information eller som svar på data som andra funktioner eller 
 uppgifter lämnar. Ingen av dessa uppgifter kan utföras innan en funktion kräver detta. Dessa uppgofter måste ske inom 
 en viss tidsram - en del är strikt beronde av att de uförs inom en exakt tidsrymd (dessa kategoriserar vi som 
 "hard-real-time", dess motsatt "soft-real-time"). En bra metafor skulle kunna vara en hjärtsimulator, där det är viktigt 
-att varje slag slår på exakt utsatt tid - det hjälper inte att det i snitt sker på rätt tid. En pacemaker skulle alltså 
+att varje slag slår på exakt utsatt tid. Det hjälper inte att det i snitt sker på rätt tid. En pacemaker skulle alltså 
 här visas arbeta i "hard-real-time". 
 
 
