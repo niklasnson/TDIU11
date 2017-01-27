@@ -24,4 +24,5 @@ Författarnas antaganden görs genom beräkningar på ett par givna antaganden o
 ### Resultat
 
 
+
 ### Diskussion 
